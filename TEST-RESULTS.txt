@@ -1,0 +1,41 @@
+TEST-RESULTS
+
+Testiranje prihvatljivosti po metodi crne kutije
+
+Pronalaženje grešaka i nedostataka kalkulator programa koji obrađuje aritmetičke izraze.
+
+==============================================================================================
+
+1. Test primeri iz zadatka (aritmetički izrazi)
+
+Ulaz: 4+5  
+Očekivani rezultat: 9.0  
+Dobijeni rezultat: 9.0
+
+Ulaz: 10+5*4+3  
+Očekivani rezultat: 33.0 (prioritet množenja)  
+Dobijeni rezultat: 33.0
+
+Zaključak: Program uspešno podržava osnovne operacije i prioritet računskih operacija.
+
+==============================================================================================
+
+2. Uočeni nedostaci
+
+Nema obrade deljenja sa nulom
+Prazan string uzrokuje izuzetak
+Nema podrške za razmake
+Nepotpuni izrazi izazivaju grešku
+
+==============================================================================================
+
+3. Zapažanja
+
+Podesiti odgovarajuće validacije izraza pre poziva
+
+==============================================================================================
+
+4. Jedinični test
+
+- Testirana funkcionalnost izraza: `10+5*4+3` (očekivani rezultat: 33.0)
+- Test prošao uspešno
